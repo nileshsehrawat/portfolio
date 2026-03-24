@@ -1,4 +1,9 @@
-import { educationData, projectsData, servicesData, workExperienceData } from "../config/constants"
+import {
+  educationData,
+  projectsData,
+  servicesData,
+  workExperienceData,
+} from "../config/constants";
 
 const Section = ({ children, title }) => {
   return (
@@ -6,12 +11,18 @@ const Section = ({ children, title }) => {
       <Title bordered={true}>{title}</Title>
       {children}
     </section>
-  )
-}
+  );
+};
 
 const Title = ({ children, bordered = false }) => {
-  return <h2 className={`pb-2 font-semibold ${bordered && "mb-2 border-dark/20 border-b-2"}`}>{children}</h2>
-}
+  return (
+    <h2
+      className={`pb-2 font-semibold ${bordered && "mb-2 border-dark/20 border-b-2"}`}
+    >
+      {children}
+    </h2>
+  );
+};
 
 const Resume = () => {
   return (
@@ -28,28 +39,38 @@ const Resume = () => {
       <div className="space-y-4 px-4 text-sm" id="resume-content">
         <header className="space-y-2 text-center">
           <div className="flex items-center justify-between gap-2">
-            <h1 className="font-bold tracking-wider">Harsh Dabas</h1>
-            <h2 className="font-bold tracking-wider">New Delhi, India</h2>
+            <h1 className="font-bold tracking-wider">Nilesh</h1>
+            <h2 className="font-bold tracking-wider">India</h2>
           </div>
           <div className="flex justify-between gap-x-4 gap-y-1">
             {[
               {
-                subName: "iamharshdabas.vercel.app",
-                href: "https://iamharshdabas.vercel.app",
-                name: "Portfolio",
-              },
-              {
-                subName: "iamharshdabas@gmail.com",
-                href: "mailto:iamharshdabas@gmail.com",
+                subName: "nileshbyte@gmail.com",
+                href: "mailto:nileshbyte@gmail.com",
                 name: "E-Mail",
               },
               {
-                subName: "github.com/iamharshdabas",
-                href: "https://github.com/iamharshdabas",
+                subName: "github.com/nileshsehrawat",
+                href: "https://github.com/nileshsehrawat",
                 name: "Github",
               },
+              {
+                subName: "linkedin.com/in/nilesh-sehrawat-a0a942322",
+                href: "https://www.linkedin.com/in/nilesh-sehrawat-a0a942322/",
+                name: "LinkedIn",
+              },
+              {
+                subName: "leetcode.com/u/nileshsehrawat",
+                href: "https://leetcode.com/u/nileshsehrawat/",
+                name: "LeetCode",
+              },
             ].map((link) => (
-              <a href={link.href} rel="noopener noreferrer" target="_blank" key={link.name}>
+              <a
+                href={link.href}
+                rel="noopener noreferrer"
+                target="_blank"
+                key={link.name}
+              >
                 <span className="font-semibold">{link.name}: </span>
                 {link.subName}
               </a>
@@ -84,7 +105,8 @@ const Resume = () => {
                 <ul className="list-inside list-disc">
                   {service.items.map((item) => (
                     <li key={item.title}>
-                      {item.title} <span className="text-dark/60">{item.description}</span>
+                      {item.title}{" "}
+                      <span className="text-dark/60">{item.description}</span>
                     </li>
                   ))}
                 </ul>
@@ -152,7 +174,7 @@ const Resume = () => {
         }
       `}</style>
     </div>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;

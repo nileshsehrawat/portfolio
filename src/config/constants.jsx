@@ -1,124 +1,112 @@
-import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react"
+import { GithubIcon, GlobeIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
 export const servicesData = [
   {
     description:
-      "I build fast, responsive, and scalable web applications from the ground up. With a focus on clean architecture and modern technologies, I can deliver a complete front-to-back solution that meets your business needs.",
+      "I build scalable full-stack web products using modern JavaScript frameworks and strong engineering fundamentals in architecture and system design.",
     items: [
       {
-        description: "(JavaScript, TypeScript, React, Next.js)",
+        description: "(Java, JavaScript, TypeScript)",
+        title: "Programming Languages",
+      },
+      {
+        description: "(React, Next.js, HTML, CSS, Tailwind CSS)",
         title: "Frontend Development",
       },
       {
-        description: "(Node.js, Express, Hono)",
+        description:
+          "(Data Structures, Backend Architecture, Scalable System Design)",
+        title: "Core Engineering",
+      },
+    ],
+    title: "Software Engineering",
+  },
+  {
+    description:
+      "I design and develop backend systems, secure APIs, and database workflows for production-ready platforms with maintainable service architecture.",
+    items: [
+      {
+        description: "(Node.js, Express.js, Fastify, Laravel, REST APIs)",
         title: "Backend Development",
       },
       {
-        description: "(PostgreSQL, SQLite, Unit Testing)",
-        title: "Database & Testing",
+        description: "(PostgreSQL, Prisma ORM, Drizzle ORM, ChromaDB)",
+        title: "Databases & ORMs",
+      },
+      {
+        description: "(Authentication, API Security, Query Optimization)",
+        title: "API & Performance",
       },
     ],
-    title: "Full-Stack Development",
+    title: "Backend & Data Systems",
   },
   {
     description:
-      "I bring digital experiences to life with interactive 3D graphics and animations. Using modern web technologies, I can create engaging and immersive visuals for your web applications.",
+      "I build mobile and AI-powered experiences, including RAG pipelines, semantic search systems, and production mobile app integrations.",
     items: [
       {
-        description: "(Three.js, React Three Fiber)",
-        title: "3D Web Graphics",
+        description: "(Flutter, API Integration, Hive Offline Caching)",
+        title: "Mobile Development",
       },
       {
-        description: "(GSAP)",
-        title: "Interactive Animations",
+        description: "(RAG Pipelines, Vector Search, Ollama Integration)",
+        title: "AI Systems",
       },
       {
-        description: "(Web Audio API)",
-        title: "Creative Audio Solutions",
+        description: "(FastAPI, Real-time Document Query Interfaces)",
+        title: "AI Platform APIs",
       },
     ],
-    title: "Creative & 3D Development",
+    title: "Mobile & AI Platforms",
   },
   {
     description:
-      "I design and build robust and secure APIs to power your applications. I have experience with RESTful APIs, authentication, and integrating third-party services.",
+      "I handle deployment and tooling for production systems, from containerization to cloud hosting and workflow automation.",
     items: [
       {
-        description: "(RESTful API Design)",
-        title: "API Design & Development",
+        description: "(Docker, VPS Deployment, Render, Railway, Contabo)",
+        title: "Deployment & Infrastructure",
       },
       {
-        description: "(JWT, Third-Party Auth)",
-        title: "Authentication Systems",
+        description: "(Git, GitHub Actions)",
+        title: "DevOps & Collaboration",
       },
       {
-        description: "(Stripe)",
-        title: "Third-Party API Integration",
+        description: "(Power BI, Tableau, Excel)",
+        title: "Data & Analytics",
       },
     ],
-    title: "API & Backend Services",
+    title: "Delivery & Tooling",
   },
-  {
-    description:
-      "I can help you automate your development and deployment workflows. I have experience with setting up CI/CD pipelines and containerizing applications.",
-    items: [
-      {
-        description: "(GitHub Actions)",
-        title: "CI/CD Pipelines",
-      },
-      {
-        description: "(Docker)",
-        title: "Containerization",
-      },
-      {
-        description: "(Vite, Bun)",
-        title: "Modern Build Tools",
-      },
-    ],
-    title: "DevOps & Tooling",
-  },
-]
+];
 
 export const projectsData = [
   {
     bgImage: "https://picsum.photos/600/400?random=1",
     description:
-      "A dynamic pricing API that provides location-based coupons to help businesses optimize product pricing and capture untapped markets.",
+      "AI-powered assistant that answers questions from uploaded PDF documents using vector embeddings and semantic retrieval pipelines.",
     frameworks: [
       {
         id: 1,
-        name: "Next.js",
+        name: "React.js",
       },
       {
         id: 2,
-        name: "React",
+        name: "Next.js",
       },
       {
         id: 3,
-        name: "TypeScript",
+        name: "FastAPI",
       },
       {
         id: 4,
-        name: "Drizzle ORM",
-      },
-      {
-        id: 5,
-        name: "Tailwind CSS",
-      },
-      {
-        id: 6,
-        name: "Stripe",
-      },
-      {
-        id: 7,
-        name: "Clerk",
+        name: "Ollama LLM",
       },
     ],
-    href: "https://github.com/iamharshdabas/parity-deals",
+    href: "https://github.com/nileshsehrawat",
     id: 1,
     image: "images/1.webp",
-    name: "Parity Deals",
-    preview: "https://parity-deals.vercel.app/",
+    name: "Smart PDF Chatbot",
   },
   {
     bgImage: "https://picsum.photos/600/400?random=2",
@@ -138,7 +126,7 @@ export const projectsData = [
         name: "Web Audio API",
       },
     ],
-    href: "https://github.com/iamharshdabas/wavify",
+    href: "https://github.com/nileshsehrawat/wavify",
     id: 2,
     image: "images/2.webp",
     name: "Wavify",
@@ -146,87 +134,160 @@ export const projectsData = [
   {
     bgImage: "https://picsum.photos/600/400?random=3",
     description:
-      "A terminal-based CLI tool for mastering Data Structures and Algorithms by typing out solutions to build muscle memory.",
+      "Production-ready waitlist platform deployed on VPS with secure APIs, scalable PostgreSQL schema design, and hardened middleware.",
     frameworks: [
       {
         id: 1,
-        name: "React",
+        name: "Next.js",
       },
       {
         id: 2,
-        name: "Ink",
+        name: "Express.js",
       },
       {
         id: 3,
-        name: "TypeScript",
+        name: "PostgreSQL",
       },
       {
         id: 4,
-        name: "Bun",
+        name: "Prisma",
       },
       {
         id: 5,
-        name: "Yargs",
+        name: "Docker",
       },
     ],
-    href: "https://github.com/iamharshdabas/dsaify",
+    href: "https://waitlist.thewillrise.com",
     id: 3,
     image: "images/3.webp",
-    name: "DSAify",
-    preview: "https://www.npmjs.com/package/dsaify",
+    name: "Welcome to Rise",
+    preview: "https://waitlist.thewillrise.com",
   },
-]
+  {
+    bgImage: "https://picsum.photos/600/400?random=4",
+    description:
+      "Monorepo-based productivity platform in progress with event-driven backend design, modular services, and web/mobile clients.",
+    frameworks: [
+      {
+        id: 1,
+        name: "Next.js",
+      },
+      {
+        id: 2,
+        name: "React Native",
+      },
+      {
+        id: 3,
+        name: "Hono",
+      },
+      {
+        id: 4,
+        name: "Drizzle ORM",
+      },
+      {
+        id: 5,
+        name: "Kafka",
+      },
+    ],
+    href: "https://github.com/nileshsehrawat",
+    id: 4,
+    image: "images/4.webp",
+    name: "WillRise (In Progress)",
+  },
+  {
+    bgImage: "https://picsum.photos/600/400?random=5",
+    description:
+      "Real-time private chat application focused on secure one-to-one messaging and live communication workflows.",
+    frameworks: [
+      {
+        id: 1,
+        name: "Real-time Chat",
+      },
+      {
+        id: 2,
+        name: "Private Messaging",
+      },
+      {
+        id: 3,
+        name: "Elysia.js",
+      },{
+        id: 4,
+        name: "Elysia.js",
+      },{
+        id: 5,
+        name: "Redis",
+      },{
+        id: 6,
+        name: "Upstash",
+      },
+    ],
+    href: "https://github.com/nileshsehrawat/realtime_private_chat",
+    id: 5,
+    image: "images/5.webp",
+    name: "Realtime Private Chat",
+  },
+];
 
 export const socialLinks = [
   {
-    href: "mailto:iamharshdabas@gmail.com",
+    href: "mailto:nileshbyte@gmail.com",
     icon: MailIcon,
     name: "Mail",
   },
   {
-    href: "https://github.com/iamharshdabas",
+    href: "https://github.com/nileshsehrawat",
     icon: GithubIcon,
     name: "Github",
   },
   {
-    href: "https://www.linkedin.com/in/harsh-dabas-454848300/",
+    href: "https://linkedin.com/in/nilesh-sehrawat-a0a942322/",
     icon: LinkedinIcon,
     name: "LinkedIn",
   },
-]
+  {
+    href: "https://leetcode.com/u/nileshsehrawat/",
+    icon: GlobeIcon,
+    name: "LeetCode",
+  },
+];
 
 export const educationData = {
-  degree: "Bachelor of Technology (BTech) in Computer Science",
+  degree: "B.Tech in Computer Science (CGPA: 8.16 / 10)",
   university: "PDM University",
-}
+};
 
 export const workExperienceData = [
   {
-    company: "BetaTest Solutions Pvt. Ltd.",
+    company: "NotionZoa",
     description: [
-      "Led frontend development for the Killer Whale Ventures trading platform, contributed to successful launch.",
-      "Achieved a 50% reduction in API response time through backend optimizations, significantly improving system efficiency.",
-      "Reduced bug reports by 30% through meticulous frontend development and testing, ensuring a seamless user experience.",
+      "Worked on production web and mobile applications across frontend, backend, and API layers.",
+      "Built and shipped product features using React, Laravel, and REST APIs.",
+      "Designed backend endpoints and PostgreSQL workflows for core application modules.",
+      "Implemented authentication flows and secure API access patterns.",
+      "Optimized critical database queries and API response times by around 35%.",
+      "Integrated APIs into a Flutter app and implemented offline caching using Hive.",
+      "Debugged production issues and resolved API-level failures.",
     ],
-    duration: "Mar 2025 - Apr 2025",
-    position: "Software Engineer Intern",
+    duration: "Jul 2025 - Jan 2026",
+    position: "SDE",
   },
   {
-    company: "Business Web Solutions",
+    company: "Delhi Metro Rail Corporation (DMRC)",
     description: [
-      "Boosted website performance by 20% through targeted optimizations, leading to improved user engagement and reduced bounce rates.",
-      "Enhanced API response times by 15% using Python and Django, directly contributing to more responsive web applications.",
-      "Engineered and delivered highly reliable web applications that consistently met and exceeded client requirements, resulting in positive feedback.",
+      "Engineered a Retrieval-Augmented Generation chatbot to query PDF documents using React, Next.js, and FastAPI.",
+      "Implemented vector search pipelines that improved response accuracy by 40% and reduced hallucinated outputs.",
+      "Built modular backend APIs and integrated them with a real-time React/Next.js document search interface.",
+      "Received practical training in networking, cybersecurity, SAP ERP, data analytics, DBMS, and Power BI.",
     ],
-    duration: "Jan 2023 - Jan 2024",
-    position: "Full Stack Web Development Intern",
+    duration: "May 2025 - Jul 2025",
+    position: "SDE Intern",
   },
-]
+];
 
 export const detailsData = [
   {
     label: "Full Name",
-    value: "Harsh Dabas",
+    value: "Nilesh",
   },
   {
     label: "Email",
@@ -234,15 +295,19 @@ export const detailsData = [
   },
   {
     label: "Phone Number",
-    value: "8810576690",
+    value: "8950525050",
   },
   {
     label: "Location",
-    value: "New Delhi, India",
+    value: "India",
   },
   {
     label: "LinkedIn",
     value: socialLinks[2].href,
+  },
+  {
+    label: "LeetCode",
+    value: "https://leetcode.com/u/nileshsehrawat/",
   },
   {
     label: "GitHub",
@@ -250,21 +315,21 @@ export const detailsData = [
   },
   {
     label: "Portfolio Website",
-    value: "https://iamharshdabas.vercel.app",
+    value: "https://github.com/nileshsehrawat",
   },
   {
     label: "Resume",
-    value: "https://iamharshdabas.vercel.app/resume",
+    value: "/resume",
   },
   {
     label: "Cover Letter (Template)",
-    value: `I am writing to express my interest in the [Job Title] position at [Company Name], which I discovered through [Platform, e.g., LinkedIn]. With a strong background in full-stack development and a passion for creating innovative web solutions, I am confident that my skills and experience align perfectly with the requirements of this role.`,
+    value: `I am writing to express my interest in the [Job Title] role at [Company Name]. I am a Software Engineer with experience building full-stack web systems, mobile applications, and AI-powered platforms using React, Next.js, Node.js, Flutter, and PostgreSQL. I enjoy designing scalable backend systems and shipping production-ready products with strong engineering fundamentals.`,
   },
   {
     label: "Notice Period",
     value: "Immediately Available",
   },
-]
+];
 
 export const navbarLinks = [
   {
@@ -292,4 +357,4 @@ export const navbarLinks = [
     link: "contact",
     text: "contact",
   },
-]
+];

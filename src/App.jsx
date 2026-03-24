@@ -1,33 +1,33 @@
-import { ReactLenis } from "lenis/react"
-import { lazy, Suspense } from "react"
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
-import { Navbar } from "./components/Navbar"
-import Details from "./pages/Details"
-import Resume from "./pages/Resume"
+import { ReactLenis } from "lenis/react";
+import { lazy, Suspense } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Navbar } from "./components/Navbar";
+import Details from "./pages/Details";
+import Resume from "./pages/Resume";
 
 const About = lazy(() =>
   import("./sections/About").then((module) => ({
     default: module.About,
   })),
-)
-const Contact = lazy(() => import("./sections/Contact"))
-const ContactSummary = lazy(() => import("./sections/ContactSummary"))
+);
+const Contact = lazy(() => import("./sections/Contact"));
+// const ContactSummary = lazy(() => import("./sections/ContactSummary"))
 const Hero = lazy(() =>
   import("./sections/Hero").then((module) => ({
     default: module.Hero,
   })),
-)
+);
 const Services = lazy(() =>
   import("./sections/Services").then((module) => ({
     default: module.Services,
   })),
-)
+);
 const ServicesSummary = lazy(() =>
   import("./sections/ServicesSummary").then((module) => ({
     default: module.ServicesSummary,
   })),
-)
-const Works = lazy(() => import("./sections/Work"))
+);
+const Works = lazy(() => import("./sections/Work"));
 
 const Home = () => (
   <main>
@@ -37,11 +37,11 @@ const Home = () => (
       <Services />
       <About />
       <Works />
-      <ContactSummary />
+      {/* <ContactSummary /> */}
       <Contact />
     </Suspense>
   </main>
-)
+);
 
 const App = () => {
   return (
@@ -57,7 +57,7 @@ const App = () => {
         </Router>
       </div>
     </ReactLenis>
-  )
-}
+  );
+};
 
-export default App
+export default App;
