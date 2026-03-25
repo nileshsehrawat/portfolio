@@ -1,4 +1,3 @@
-import { Float } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { AnimatedBoxes } from "../components/AnimatedBoxes";
 import { AnimatedHeader } from "../components/AnimatedHeader";
@@ -16,20 +15,16 @@ export const Hero = () => {
       <div className="absolute inset-0 size-full">
         <Canvas
           camera={{
-            fov: 36,
-            position: [0, 0, 24],
+            fov: 34,
+            position: [0, 1, 20],
           }}
         >
-          <directionalLight intensity={15} position={[10, 10, 5]} />
-
-          <Float
-            floatIntensity={1}
-            floatingRange={[1, 1]}
-            rotationIntensity={1}
-            speed={1}
-          >
-            <AnimatedBoxes />
-          </Float>
+          <ambientLight intensity={0.42} />
+          <directionalLight intensity={5.2} position={[7, 10, 8]} />
+          <directionalLight intensity={2.8} position={[-7, -4, 4]} />
+          <pointLight intensity={8} position={[0, 3, 8]} />
+          <pointLight intensity={2.2} position={[0, -2, -6]} />
+          <AnimatedBoxes />
         </Canvas>
       </div>
       <div className="z-10">

@@ -6,9 +6,9 @@ import { Marquee } from "../components/Marquee"
 import { socialLinks } from "../config/constants"
 
 const Contact = () => {
-  const text = `Got a question, how or project Idea?
+  const TEXT = `Got a question, how or project Idea?
     WE’D love to hear from you and discus further!`
-  const items = [
+  const ITEMS = [
     "just imagin, I code",
     "just imagin, I code",
     "just imagin, I code",
@@ -34,7 +34,7 @@ const Contact = () => {
         <AnimatedHeader
           lineColor={"bg-light"}
           subTitle={"You Dream It, I Code it"}
-          text={text}
+          text={TEXT}
           title={"Contact"}
           withScrollTrigger={true}
         />
@@ -71,7 +71,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Marquee Icon={SparkleIcon} items={items} />
+      <Marquee Icon={SparkleIcon} items={ITEMS} />
     </section>
   )
 }
