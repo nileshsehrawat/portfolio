@@ -12,11 +12,7 @@ const About = lazy(() =>
 );
 const Contact = lazy(() => import("./sections/Contact"));
 // const ContactSummary = lazy(() => import("./sections/ContactSummary"))
-const Hero = lazy(() =>
-  import("./sections/Hero").then((module) => ({
-    default: module.Hero,
-  })),
-);
+const Hero = lazy(() => import("./sections/Hero"));
 const Services = lazy(() =>
   import("./sections/Services").then((module) => ({
     default: module.Services,

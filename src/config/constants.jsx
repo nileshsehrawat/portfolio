@@ -1,4 +1,4 @@
-import { GithubIcon, GlobeIcon, LinkedinIcon, MailIcon } from "lucide-react";
+import { Mail, Globe, Briefcase, GitBranch } from "lucide-react";
 
 export const servicesData = [
   {
@@ -210,13 +210,16 @@ export const projectsData = [
       {
         id: 3,
         name: "Elysia.js",
-      },{
+      },
+      {
         id: 4,
         name: "Elysia.js",
-      },{
+      },
+      {
         id: 5,
         name: "Redis",
-      },{
+      },
+      {
         id: 6,
         name: "Upstash",
       },
@@ -231,22 +234,22 @@ export const projectsData = [
 export const socialLinks = [
   {
     href: "mailto:nileshbyte@gmail.com",
-    icon: MailIcon,
+    icon: Mail,
     name: "Mail",
   },
   {
     href: "https://github.com/nileshsehrawat",
-    icon: GithubIcon,
+    icon: GitBranch,
     name: "Github",
   },
   {
     href: "https://linkedin.com/in/nilesh-sehrawat-a0a942322/",
-    icon: LinkedinIcon,
+    icon: Briefcase,
     name: "LinkedIn",
   },
   {
     href: "https://leetcode.com/u/nileshsehrawat/",
-    icon: GlobeIcon,
+    icon: Globe,
     name: "LeetCode",
   },
 ];
