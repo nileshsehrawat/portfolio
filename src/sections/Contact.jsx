@@ -1,20 +1,20 @@
-import { useGSAP } from "@gsap/react"
-import gsap from "gsap"
-import { SparkleIcon } from "lucide-react"
-import { AnimatedHeader } from "../components/AnimatedHeader"
-import { Marquee } from "../components/Marquee"
-import { phoneNumber, socialLinks } from "../config/constants"
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { SparkleIcon } from "lucide-react";
+import { AnimatedHeader } from "../components/AnimatedHeader";
+import { Marquee } from "../components/Marquee";
+import { phoneNumber, socialLinks } from "../config/constants";
 
 const Contact = () => {
   const TEXT = `Got a question, how or project Idea?
-    WE’D love to hear from you and discus further!`
+    WE’D love to hear from you and discus further!`;
   const ITEMS = [
     "just imagin, I code",
     "just imagin, I code",
     "just imagin, I code",
     "just imagin, I code",
     "just imagin, I code",
-  ]
+  ];
   useGSAP(() => {
     gsap.from(".social-link", {
       delay: 0.5,
@@ -26,10 +26,13 @@ const Contact = () => {
       },
       stagger: 0.2,
       y: 100,
-    })
-  }, [])
+    });
+  }, []);
   return (
-    <section className="flex min-h-screen flex-col justify-between bg-dark pt-8 text-light sm:pt-16" id="contact">
+    <section
+      className="flex min-h-screen flex-col justify-between bg-dark pt-8 text-light sm:pt-16"
+      id="contact"
+    >
       <div>
         <AnimatedHeader
           lineColor={"bg-light"}
@@ -73,7 +76,7 @@ const Contact = () => {
       </div>
       <Marquee Icon={SparkleIcon} items={ITEMS} />
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
