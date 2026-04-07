@@ -3,7 +3,7 @@ import gsap from "gsap"
 import { SparkleIcon } from "lucide-react"
 import { AnimatedHeader } from "../components/AnimatedHeader"
 import { Marquee } from "../components/Marquee"
-import { socialLinks } from "../config/constants"
+import { phoneNumber, socialLinks } from "../config/constants"
 
 const Contact = () => {
   const TEXT = `Got a question, how or project Idea?
@@ -48,7 +48,7 @@ const Contact = () => {
           <div className="social-link">
             <h2>Phone</h2>
             <div className="h-px w-full bg-light/20" />
-            <p>+91 8950525050</p>
+            <p>{phoneNumber}</p>
           </div>
 
           <div className="social-link">

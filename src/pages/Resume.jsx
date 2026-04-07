@@ -1,4 +1,5 @@
 import {
+  phoneNumber,
   educationData,
   projectsData,
   servicesData,
@@ -38,12 +39,17 @@ const Resume = () => {
       </div>
       <div className="space-y-4 px-4 text-sm" id="resume-content">
         <header className="space-y-2 text-center">
-          <div className="flex items-center justify-between gap-2">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 sm:justify-between">
             <h1 className="font-bold tracking-wider">Nilesh</h1>
             <h2 className="font-bold tracking-wider">India</h2>
           </div>
-          <div className="flex justify-between gap-x-4 gap-y-1">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 sm:justify-between">
             {[
+              {
+                subName: phoneNumber,
+                href: "tel:+918950525050",
+                name: "Phone",
+              },
               {
                 subName: "nileshbyte@gmail.com",
                 href: "mailto:nileshbyte@gmail.com",
@@ -66,6 +72,7 @@ const Resume = () => {
               },
             ].map((link) => (
               <a
+                className="break-all sm:break-normal"
                 href={link.href}
                 rel="noopener noreferrer"
                 target="_blank"

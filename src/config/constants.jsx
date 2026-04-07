@@ -259,6 +259,8 @@ export const educationData = {
   university: "PDM University",
 };
 
+export const phoneNumber = "+91 8950525050";
+
 export const workExperienceData = [
   {
     company: "NotionZoa",
@@ -298,7 +300,7 @@ export const detailsData = [
   },
   {
     label: "Phone Number",
-    value: "8950525050",
+    value: phoneNumber,
   },
   {
     label: "Location",
