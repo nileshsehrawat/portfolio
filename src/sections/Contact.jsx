@@ -6,14 +6,14 @@ import { Marquee } from "../components/Marquee";
 import { phoneNumber, socialLinks } from "../config/constants";
 
 const Contact = () => {
-  const TEXT = `Got a question, how or project Idea?
-    WE’D love to hear from you and discus further!`;
+  const TEXT = `Got a question, hiring requirement,
+    or project idea? Let's discuss.`;
   const ITEMS = [
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
+    "you imagine, I build",
+    "you imagine, I build",
+    "you imagine, I build",
+    "you imagine, I build",
+    "you imagine, I build",
   ];
   useGSAP(() => {
     gsap.from(".social-link", {
@@ -36,7 +36,7 @@ const Contact = () => {
       <div>
         <AnimatedHeader
           lineColor={"bg-light"}
-          subTitle={"You Dream It, I Code it"}
+          subTitle={"Open to SWE Opportunities"}
           text={TEXT}
           title={"Contact"}
           withScrollTrigger={true}
@@ -64,6 +64,7 @@ const Contact = () => {
                   href={social.href}
                   key={social.name}
                   rel="noopener noreferrer"
+                  target="_blank"
                 >
                   {"{ "}
                   {social.name}

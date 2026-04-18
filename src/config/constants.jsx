@@ -3,10 +3,10 @@ import { Mail, Globe, Briefcase, GitBranch } from "lucide-react";
 export const servicesData = [
   {
     description:
-      "I build scalable full-stack web products using modern JavaScript frameworks and strong engineering fundamentals in architecture and system design.",
+      "I build production-ready full-stack products with clean architecture, maintainable code, and measurable business impact.",
     items: [
       {
-        description: "(Java, JavaScript, TypeScript)",
+        description: "(Java, JavaScript, TypeScript, C#)",
         title: "Programming Languages",
       },
       {
@@ -14,8 +14,7 @@ export const servicesData = [
         title: "Frontend Development",
       },
       {
-        description:
-          "(Data Structures, Backend Architecture, Scalable System Design)",
+        description: "(DSA, Backend Architecture, Scalable System Design)",
         title: "Core Engineering",
       },
     ],
@@ -23,18 +22,20 @@ export const servicesData = [
   },
   {
     description:
-      "I design and develop backend systems, secure APIs, and database workflows for production-ready platforms with maintainable service architecture.",
+      "I design backend systems, secure APIs, and reliable data workflows for high-availability web applications.",
     items: [
       {
-        description: "(Node.js, Express.js, Fastify, Laravel, REST APIs)",
+        description:
+          "(Node.js, Express.js, Fastify, Laravel, ASP.NET Core 8 Web API, REST APIs)",
         title: "Backend Development",
       },
       {
-        description: "(PostgreSQL, Prisma ORM, Drizzle ORM, ChromaDB)",
+        description: "(SQL Server, PostgreSQL, MySQL, Prisma ORM, Drizzle ORM)",
         title: "Databases & ORMs",
       },
       {
-        description: "(Authentication, API Security, Query Optimization)",
+        description:
+          "(ASP.NET Core Identity, API Security, Query Optimization, Debugging)",
         title: "API & Performance",
       },
     ],
@@ -42,7 +43,7 @@ export const servicesData = [
   },
   {
     description:
-      "I build mobile and AI-powered experiences, including RAG pipelines, semantic search systems, and production mobile app integrations.",
+      "I build mobile and AI-assisted experiences, including RAG pipelines, semantic retrieval, and production app integrations.",
     items: [
       {
         description: "(Flutter, API Integration, Hive Offline Caching)",
@@ -61,7 +62,7 @@ export const servicesData = [
   },
   {
     description:
-      "I handle deployment and tooling for production systems, from containerization to cloud hosting and workflow automation.",
+      "I handle deployment and developer tooling for production systems, from containerization to cloud hosting and CI workflows.",
     items: [
       {
         description: "(Docker, VPS Deployment, Render, Railway, Contabo)",
@@ -82,9 +83,40 @@ export const servicesData = [
 
 export const projectsData = [
   {
+    bgImage: "https://picsum.photos/600/400?random=11",
+    description:
+      "Built a full-stack operations dashboard with React and ASP.NET Core 8 Web API to manage entities, track records, and run CSV bulk import/export workflows with secure auth and optimized EF Core queries.",
+    frameworks: [
+      {
+        id: 1,
+        name: "React",
+      },
+      {
+        id: 2,
+        name: "ASP.NET Core 8",
+      },
+      {
+        id: 3,
+        name: "EF Core",
+      },
+      {
+        id: 4,
+        name: "SQL Server",
+      },
+      {
+        id: 5,
+        name: "ASP.NET Identity",
+      },
+    ],
+    href: "https://github.com/nileshsehrawat",
+    id: 6,
+    image: "https://picsum.photos/900/520?random=111",
+    name: "OpsBoard - Full Stack Operations Dashboard",
+  },
+  {
     bgImage: "https://picsum.photos/600/400?random=1",
     description:
-      "AI-powered assistant that answers questions from uploaded PDF documents using vector embeddings and semantic retrieval pipelines.",
+      "RAG-based document assistant with a Python backend foundation and a later TypeScript rewrite for cleaner orchestration and maintainability.",
     frameworks: [
       {
         id: 1,
@@ -102,16 +134,34 @@ export const projectsData = [
         id: 4,
         name: "Ollama LLM",
       },
+      {
+        id: 5,
+        name: "TypeScript",
+      },
     ],
     href: "https://github.com/nileshsehrawat",
     id: 1,
     image: "images/1.webp",
     name: "Smart PDF Chatbot",
+    subProjects: [
+      {
+        href: "https://github.com/nileshsehrawat/dmrc-chatbot-backend",
+        id: "smart-pdf-python",
+        name: "Python Backend Version",
+        status: "Original",
+      },
+      {
+        href: "https://github.com/nileshsehrawat/rag-backend-ts",
+        id: "smart-pdf-ts",
+        name: "TypeScript Rewrite",
+        status: "Rebuilt",
+      },
+    ],
   },
   {
     bgImage: "https://picsum.photos/600/400?random=2",
     description:
-      "An experimental tool that transforms plain text into unique, algorithmically generated waveform audio inspired by Angelcore music.",
+      "TypeScript toolchain that transforms text into generated waveform audio through deterministic processing pipelines.",
     frameworks: [
       {
         id: 1,
@@ -134,7 +184,7 @@ export const projectsData = [
   {
     bgImage: "https://picsum.photos/600/400?random=3",
     description:
-      "Production-ready waitlist platform deployed on VPS with secure APIs, scalable PostgreSQL schema design, and hardened middleware.",
+      "Unified WillRise ecosystem composed of two connected products: a production waitlist platform and an in-progress monorepo productivity suite.",
     frameworks: [
       {
         id: 1,
@@ -156,48 +206,47 @@ export const projectsData = [
         id: 5,
         name: "Docker",
       },
+      {
+        id: 6,
+        name: "React Native",
+      },
+      {
+        id: 7,
+        name: "Hono",
+      },
+      {
+        id: 8,
+        name: "Drizzle ORM",
+      },
+      {
+        id: 9,
+        name: "Kafka",
+      },
     ],
     href: "https://waitlist.thewillrise.com",
     id: 3,
     image: "images/3.webp",
-    name: "Welcome to Rise",
+    name: "WillRise Ecosystem",
     preview: "https://waitlist.thewillrise.com",
-  },
-  {
-    bgImage: "https://picsum.photos/600/400?random=4",
-    description:
-      "Monorepo-based productivity platform in progress with event-driven backend design, modular services, and web/mobile clients.",
-    frameworks: [
+    subProjects: [
       {
-        id: 1,
-        name: "Next.js",
+        href: "https://waitlist.thewillrise.com",
+        id: "willrise-waitlist",
+        name: "Welcome to Rise (Live)",
+        status: "Production",
       },
       {
-        id: 2,
-        name: "React Native",
-      },
-      {
-        id: 3,
-        name: "Hono",
-      },
-      {
-        id: 4,
-        name: "Drizzle ORM",
-      },
-      {
-        id: 5,
-        name: "Kafka",
+        href: "https://github.com/nileshsehrawat",
+        id: "willrise-core",
+        name: "WillRise Core Platform",
+        status: "In Progress",
       },
     ],
-    href: "https://github.com/nileshsehrawat",
-    id: 4,
-    image: "images/4.webp",
-    name: "WillRise (In Progress)",
   },
   {
     bgImage: "https://picsum.photos/600/400?random=5",
     description:
-      "Real-time private chat application focused on secure one-to-one messaging and live communication workflows.",
+      "Real-time private chat system focused on secure one-to-one messaging, low-latency delivery, and reliable session handling.",
     frameworks: [
       {
         id: 1,
@@ -213,7 +262,7 @@ export const projectsData = [
       },
       {
         id: 4,
-        name: "Elysia.js",
+        name: "WebSocket",
       },
       {
         id: 5,
@@ -256,6 +305,7 @@ export const socialLinks = [
 
 export const educationData = {
   degree: "B.Tech in Computer Science (CGPA: 8.16 / 10)",
+  timeframe: "2022 - 2026",
   university: "PDM University",
 };
 
@@ -265,13 +315,15 @@ export const workExperienceData = [
   {
     company: "NotionZoa",
     description: [
-      "Worked on production web and mobile applications across frontend, backend, and API layers.",
-      "Built and shipped product features using React, Laravel, and REST APIs.",
-      "Designed backend endpoints and PostgreSQL workflows for core application modules.",
+      "Built and shipped production features for a hotel booking and service-management app across web/mobile frontend, backend, and API layers.",
+      "Delivered product modules using React, Laravel, and REST APIs in sprint-based releases.",
+      "Also contributed to an HVAC equipment purchase and after-sales servicing platform with customer ticket workflows and technician availability tracking.",
+      "Designed backend endpoints and PostgreSQL workflows for business-critical modules.",
       "Implemented authentication flows and secure API access patterns.",
       "Optimized critical database queries and API response times by around 35%.",
       "Integrated APIs into a Flutter app and implemented offline caching using Hive.",
-      "Debugged production issues and resolved API-level failures.",
+      "Supported admin dashboard flows for reviews, support operations, and end-to-end service lifecycle management.",
+      "Debugged production incidents and resolved API-level failures with root-cause analysis.",
     ],
     duration: "Jul 2025 - Jan 2026",
     position: "SDE",
@@ -279,13 +331,25 @@ export const workExperienceData = [
   {
     company: "Delhi Metro Rail Corporation (DMRC)",
     description: [
-      "Engineered a Retrieval-Augmented Generation chatbot to query PDF documents using React, Next.js, and FastAPI.",
+      "Engineered a Retrieval-Augmented Generation chatbot to query technical and operational PDF documents using React, Next.js, and FastAPI.",
       "Implemented vector search pipelines that improved response accuracy by 40% and reduced hallucinated outputs.",
       "Built modular backend APIs and integrated them with a real-time React/Next.js document search interface.",
       "Received practical training in networking, cybersecurity, SAP ERP, data analytics, DBMS, and Power BI.",
     ],
     duration: "May 2025 - Jul 2025",
     position: "SDE Intern",
+  },
+  {
+    company: "Business Web Solution",
+    description: [
+      "Joined as a frontend intern and delivered responsive React UI modules for an EdTech web platform with reusable component patterns.",
+      "Transitioned into backend-support tasks within 3 months based on team requirements.",
+      "Contributed to API integration, request/response contract handling, and bug fixes across frontend and backend touchpoints.",
+      "Worked with C# and .NET fundamentals for supervised feature-level updates, including endpoint and validation fixes.",
+      "Participated in sprint planning, QA handoff, and release cycles to ship production features on schedule.",
+    ],
+    duration: "Jan 2023 - Jan 2024",
+    position: "Software Developer Intern",
   },
 ];
 
@@ -320,7 +384,7 @@ export const detailsData = [
   },
   {
     label: "Portfolio Website",
-    value: "https://github.com/nileshsehrawat",
+    value: "https://nileshsehrawat.vercel.app",
   },
   {
     label: "Resume",
@@ -328,7 +392,7 @@ export const detailsData = [
   },
   {
     label: "Cover Letter (Template)",
-    value: `I am writing to express my interest in the [Job Title] role at [Company Name]. I am a Software Engineer with experience building full-stack web systems, mobile applications, and AI-powered platforms using React, Next.js, Node.js, Flutter, and PostgreSQL. I enjoy designing scalable backend systems and shipping production-ready products with strong engineering fundamentals.`,
+    value: `I am writing to express my interest in the Software Engineer role at NIC. I have hands-on experience shipping production features in React-based web applications and supporting backend API modules across internship and SDE roles. My recent work includes secure API integration, backend workflow design, query optimization, and reliability-focused debugging. I am currently upskilling in C# and ASP.NET Core Web API to contribute effectively in React + .NET engineering environments from day one.`,
   },
   {
     label: "Notice Period",

@@ -131,7 +131,7 @@ const Works = () => {
             {/* title */}
             <a
               className="relative z-10 flex items-center justify-between px-4 text-dark transition-all duration-700 md:group-hover:px-8 md:group-hover:text-light"
-              href={project.href}
+              href={project.preview || project.href}
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -143,7 +143,7 @@ const Works = () => {
             {/* divider */}
             <div className="relative z-10 h-px w-full bg-dark" />
             {/* framework */}
-            <div className="relative z-10 transtion-all flex flex-wrap gap-x-4 px-4 text-xs uppercase leading-loose duration-500 md:text-sm md:group-hover:px-8">
+            <div className="relative z-10 flex flex-wrap gap-x-4 px-4 text-xs uppercase leading-loose transition-all duration-500 md:text-sm md:group-hover:px-8">
               {project.frameworks.map((framework) => (
                 <p
                   className="text-dark transition-colors duration-500 md:group-hover:text-light"
@@ -153,6 +153,21 @@ const Works = () => {
                 </p>
               ))}
             </div>
+            {project.subProjects?.length ? (
+              <div className="relative z-10 flex flex-wrap items-center gap-2 px-4 pb-1 text-xs md:group-hover:px-8 md:text-sm">
+                {project.subProjects.map((subProject) => (
+                  <a
+                    className="rounded-full border border-dark/40 px-3 py-1 text-dark transition-colors duration-500 md:group-hover:border-light/60 md:group-hover:text-light"
+                    href={subProject.href}
+                    key={subProject.id}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {subProject.name} - {subProject.status}
+                  </a>
+                ))}
+              </div>
+            ) : null}
             {/* mobile preview image */}
             <div className="px-4 md:hidden">
               <div className="relative flex items-center justify-center">
@@ -167,6 +182,21 @@ const Works = () => {
                   src={project.image}
                 />
               </div>
+              {project.subProjects?.length ? (
+                <div className="mt-3 flex flex-wrap gap-2 text-xs">
+                  {project.subProjects.map((subProject) => (
+                    <a
+                      className="rounded-full border border-dark/30 px-3 py-1"
+                      href={subProject.href}
+                      key={`${subProject.id}-mobile`}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      {subProject.name} - {subProject.status}
+                    </a>
+                  ))}
+                </div>
+              ) : null}
               <Desc className="pt-4" text={project.description} />
             </div>
           </div>

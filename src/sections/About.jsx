@@ -6,13 +6,11 @@ import { AnimatedLine } from "../components/AnimatedLine";
 
 export const About = () => {
   const text = `Passionate about clean architecture
-    I build scalable, high-performance solutions
+    I build scalable, high-performance systems
     from prototype to production`;
-  const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-  When I’m not shipping:
-⚡ Open-sourcing my latest experiment (or, you know, just hacking on yours)
-🔫 Sharpening my focus at the shooting range (where patience meets pure precision)
-🎧 Syncing to the rhythm of code and music while CI pipelines pass (multitasking? More like a symphony of efficiency)`;
+  const aboutText = `I focus on building fast, intuitive products, from polished React interfaces to reliable backend APIs. I care deeply about maintainable code, clear architecture, and shipping features that solve real user problems.
+
+My recent work includes API integration, authentication workflows, query optimization, and production issue resolution. I am currently strengthening my C# and ASP.NET Core fundamentals to contribute effectively in React + .NET teams.`;
   const imgRef = useRef(null);
   useGSAP(() => {
     gsap.to("#about", {
@@ -44,7 +42,7 @@ export const About = () => {
       id="about"
     >
       <AnimatedHeader
-        subTitle={"Cod with purpose, Built to scale"}
+        subTitle={"Code with purpose, built to scale"}
         text={text}
         title={"About"}
         withScrollTrigger={true}
