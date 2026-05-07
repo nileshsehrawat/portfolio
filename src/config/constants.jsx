@@ -3,22 +3,43 @@ import { Mail, Globe, Briefcase, GitBranch } from "lucide-react";
 export const servicesData = [
   {
     description:
-      "I build production-ready full-stack products with clean architecture, maintainable code, and measurable business impact.",
+      "I build production-ready TypeScript applications with clean architecture, maintainable code, and measurable business impact.",
     items: [
       {
-        description: "(Java, JavaScript, TypeScript, C#)",
-        title: "Programming Languages",
+        description: "(TypeScript, JavaScript, Java, C#)",
+        title: "Primary Languages",
       },
       {
         description: "(React, Next.js, HTML, CSS, Tailwind CSS)",
-        title: "Frontend Development",
+        title: "Frontend Stack",
       },
       {
-        description: "(DSA, Backend Architecture, Scalable System Design)",
-        title: "Core Engineering",
+        description: "(Node.js, Express.js, Fastify, REST APIs)",
+        title: "Application Layer",
       },
     ],
-    title: "Software Engineering",
+    title: "TypeScript Product Engineering",
+  },
+  {
+    description:
+      "I build TypeScript-first AI systems, with RAG workflows, semantic retrieval, and LLM-assisted document applications supported by Python and FastAPI when needed.",
+    items: [
+      {
+        description:
+          "(RAG Pipelines, Vector Search, Ollama, Semantic Retrieval)",
+        title: "LLM Applications",
+      },
+      {
+        description:
+          "(TypeScript, API Integration, FastAPI, Python, Document QA)",
+        title: "AI Backends",
+      },
+      {
+        description: "(Prompt Iteration, Retrieval Tuning, Context Control)",
+        title: "LLM Workflow Design",
+      },
+    ],
+    title: "AI / LLM Systems",
   },
   {
     description:
@@ -26,7 +47,7 @@ export const servicesData = [
     items: [
       {
         description:
-          "(Node.js, Express.js, Fastify, Laravel, ASP.NET Core 8 Web API, REST APIs)",
+          "(Node.js, Express.js, Fastify, Laravel, .NET Core, REST APIs)",
         title: "Backend Development",
       },
       {
@@ -40,25 +61,6 @@ export const servicesData = [
       },
     ],
     title: "Backend & Data Systems",
-  },
-  {
-    description:
-      "I build mobile and AI-assisted experiences, including RAG pipelines, semantic retrieval, and production app integrations.",
-    items: [
-      {
-        description: "(Flutter, API Integration, Hive Offline Caching)",
-        title: "Mobile Development",
-      },
-      {
-        description: "(RAG Pipelines, Vector Search, Ollama Integration)",
-        title: "AI Systems",
-      },
-      {
-        description: "(FastAPI, Real-time Document Query Interfaces)",
-        title: "AI Platform APIs",
-      },
-    ],
-    title: "Mobile & AI Platforms",
   },
   {
     description:
@@ -83,40 +85,36 @@ export const servicesData = [
 
 export const projectsData = [
   {
-    bgImage: "https://picsum.photos/600/400?random=11",
+    bgImage: "https://picsum.photos/600/400?random=12",
     description:
-      "Built a full-stack operations dashboard with React and ASP.NET Core 8 Web API to manage entities, track records, and run CSV bulk import/export workflows with secure auth and optimized EF Core queries.",
+      "Built a high-throughput PDF rendering engine in TypeScript using Worker Threads and an in-memory processing pipeline. Designed a scalable worker pool with job queues, concurrency control, and parallel PDF generation architecture. Integrated Typst-based rendering with zero filesystem I/O, optimizing performance and reducing rendering latency. Implemented benchmarking and throughput optimization strategies to scale toward 50+ PDF generations per second.",
     frameworks: [
       {
         id: 1,
-        name: "React",
+        name: "TypeScript",
       },
       {
         id: 2,
-        name: "ASP.NET Core 8",
+        name: "Worker Threads",
       },
       {
         id: 3,
-        name: "EF Core",
+        name: "Typst",
       },
       {
         id: 4,
-        name: "SQL Server",
-      },
-      {
-        id: 5,
-        name: "ASP.NET Identity",
+        name: "Node.js",
       },
     ],
-    href: "https://github.com/nileshsehrawat",
-    id: 6,
-    image: "https://picsum.photos/900/520?random=111",
-    name: "OpsBoard - Full Stack Operations Dashboard",
+    href: "https://github.com/nileshsehrawat/fluxprint",
+    id: 7,
+    image: "images/7.webp",
+    name: "Flux Print",
   },
   {
     bgImage: "https://picsum.photos/600/400?random=1",
     description:
-      "RAG-based document assistant with a Python backend foundation and a later TypeScript rewrite for cleaner orchestration and maintainability.",
+      "RAG-based document assistant for querying technical PDF documents. Built a Python backend foundation and later rebuilt the orchestration in TypeScript for cleaner maintainability and easier scaling.",
     frameworks: [
       {
         id: 1,
@@ -278,6 +276,37 @@ export const projectsData = [
     image: "images/5.webp",
     name: "Realtime Private Chat",
   },
+  {
+    bgImage: "https://picsum.photos/600/400?random=11",
+    description:
+      "Built a full-stack operations dashboard with React and ASP.NET Core 8 Web API to manage entities, track records, and run CSV bulk import/export workflows with secure auth and optimized EF Core queries.",
+    frameworks: [
+      {
+        id: 1,
+        name: "React",
+      },
+      {
+        id: 2,
+        name: "ASP.NET Core 8",
+      },
+      {
+        id: 3,
+        name: "EF Core",
+      },
+      {
+        id: 4,
+        name: "SQL Server",
+      },
+      {
+        id: 5,
+        name: "ASP.NET Identity",
+      },
+    ],
+    href: "https://github.com/nileshsehrawat",
+    id: 6,
+    image: "https://picsum.photos/900/520?random=111",
+    name: "OpsBoard - Full Stack Operations Dashboard",
+  },
 ];
 
 export const socialLinks = [
@@ -331,7 +360,7 @@ export const workExperienceData = [
   {
     company: "Delhi Metro Rail Corporation (DMRC)",
     description: [
-      "Engineered a Retrieval-Augmented Generation chatbot to query technical and operational PDF documents using React, Next.js, and FastAPI.",
+      "Engineered a Retrieval-Augmented Generation chatbot to query technical and operational PDF documents using React, Next.js, FastAPI, and LLM-backed retrieval.",
       "Implemented vector search pipelines that improved response accuracy by 40% and reduced hallucinated outputs.",
       "Built modular backend APIs and integrated them with a real-time React/Next.js document search interface.",
       "Received practical training in networking, cybersecurity, SAP ERP, data analytics, DBMS, and Power BI.",
@@ -392,7 +421,7 @@ export const detailsData = [
   },
   {
     label: "Cover Letter (Template)",
-    value: `I am writing to express my interest in the Software Engineer role at NIC. I have hands-on experience shipping production features in React-based web applications and supporting backend API modules across internship and SDE roles. My recent work includes secure API integration, backend workflow design, query optimization, and reliability-focused debugging. I am currently upskilling in C# and ASP.NET Core Web API to contribute effectively in React + .NET engineering environments from day one.`,
+    value: `I am writing to express my interest in an AI/LLM-focused software engineer role. I have hands-on experience shipping production features in TypeScript-led web applications, building RAG-based document assistants, integrating LLM workflows, and supporting backend API modules across internship and SDE roles. My recent work includes vector search, FastAPI integrations, secure backend workflow design, query optimization, and reliability-focused debugging. I am comfortable working across TypeScript, React, Next.js, Python, and APIs to build production-ready AI applications.`,
   },
   {
     label: "Notice Period",

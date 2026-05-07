@@ -10,7 +10,7 @@ export const About = () => {
     from prototype to production`;
   const aboutText = `I focus on building fast, intuitive products, from polished React interfaces to reliable backend APIs. I care deeply about maintainable code, clear architecture, and shipping features that solve real user problems.
 
-My recent work includes API integration, authentication workflows, query optimization, and production issue resolution. I am currently strengthening my C# and ASP.NET Core fundamentals to contribute effectively in React + .NET teams.`;
+My recent work spans full-stack feature delivery across React, Next.js, Laravel, FastAPI, and .NET stacks. I excel at API integration, query optimization, vector search pipelines for LLM applications, authentication workflows, production debugging, and sprint-based feature shipping. I'm actively strengthening my C# and ASP.NET Core expertise to build high-performance systems in modern tech stacks.`;
   const imgRef = useRef(null);
   useGSAP(() => {
     gsap.to("#about", {

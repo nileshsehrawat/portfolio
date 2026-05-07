@@ -77,7 +77,7 @@ const Resume = () => {
               },
             ].map((link) => (
               <a
-                className="break-all sm:break-normal"
+                className="break-all sm:break-normal underline underline-offset-2 cursor-pointer"
                 href={link.href}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -92,13 +92,14 @@ const Resume = () => {
 
         <Section title="Professional Summary">
           <p>
-            Software Engineer with close to 2 years of hands-on experience
-            building production web applications using React, Next.js, and REST
-            APIs across internship and SDE roles. Strong in feature delivery,
-            backend integration, API security patterns, and debugging. Focused
-            on React-based frontend development with working knowledge of
-            backend technologies including Node.js, Laravel, ASP.NET Core Web
-            API, and SQL-backed data workflows.
+            TypeScript-first Software Engineer with over 2 years of experience
+            building production web applications and AI-assisted products across
+            internship and SDE roles. Hands-on with Retrieval-Augmented
+            Generation, vector search, FastAPI-backed LLM workflows, and
+            React/Next.js interfaces for document intelligence use cases. Strong
+            in feature delivery, backend integration, API security patterns,
+            debugging, and shipping scalable applications across TypeScript,
+            Node.js, Laravel, and .NET stacks.
           </p>
         </Section>
 
@@ -244,6 +245,7 @@ const Resume = () => {
           }
           #resume-content a {
             text-decoration: underline;
+            cursor: pointer;
           }
         }
       `}</style>
