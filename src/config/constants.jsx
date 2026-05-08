@@ -87,7 +87,7 @@ export const projectsData = [
   {
     bgImage: "https://picsum.photos/600/400?random=12",
     description:
-      "Built a high-throughput PDF rendering engine in TypeScript using Worker Threads and an in-memory processing pipeline. Designed a scalable worker pool with job queues, concurrency control, and parallel PDF generation architecture. Integrated Typst-based rendering with zero filesystem I/O, optimizing performance and reducing rendering latency. Implemented benchmarking and throughput optimization strategies to scale toward 50+ PDF generations per second.",
+      "Built a high-throughput TypeScript PDF rendering engine with Worker Threads and in-memory processing. Added Typst-based output, job queues, and concurrency control to improve throughput and scale toward 50+ PDF generations per second.",
     frameworks: [
       {
         id: 1,
@@ -333,7 +333,8 @@ export const socialLinks = [
 ];
 
 export const educationData = {
-  degree: "B.Tech in Computer Science (CGPA: 8.16 / 10)",
+  degree: "Bachelor's in Computer Science",
+  cgpa: "8.16 / 10",
   timeframe: "2022 - 2026",
   university: "PDM University",
 };
@@ -344,11 +345,11 @@ export const workExperienceData = [
   {
     company: "NotionZoa",
     description: [
-      "Built and shipped production features for a hotel booking and service-management app across web/mobile frontend, backend, and API layers.",
+      "Reduced booking friction by delivering high-performance features for a hotel service-management app, directly impacting user conversion across web and mobile platforms.",
       "Delivered product modules using React, Laravel, and REST APIs in sprint-based releases.",
-      "Also contributed to an HVAC equipment purchase and after-sales servicing platform with customer ticket workflows and technician availability tracking.",
+      "Optimized backend throughput by designing PostgreSQL workflows and REST endpoints that handled business-critical modules for ticket management and technician scheduling.",
+      "Accelerated time-to-market for an industrial HVAC servicing platform by implementing a modular technician availability system, reducing manual scheduling overhead.",
       "Designed backend endpoints and PostgreSQL workflows for business-critical modules.",
-      "Implemented authentication flows and secure API access patterns.",
       "Optimized critical database queries and API response times by around 35%.",
       "Integrated APIs into a Flutter app and implemented offline caching using Hive.",
       "Supported admin dashboard flows for reviews, support operations, and end-to-end service lifecycle management.",
@@ -360,10 +361,10 @@ export const workExperienceData = [
   {
     company: "Delhi Metro Rail Corporation (DMRC)",
     description: [
-      "Engineered a Retrieval-Augmented Generation chatbot to query technical and operational PDF documents using React, Next.js, FastAPI, and LLM-backed retrieval.",
-      "Implemented vector search pipelines that improved response accuracy by 40% and reduced hallucinated outputs.",
+      "Automated technical knowledge retrieval by engineering a RAG-based chatbot, eliminating manual document searching across thousands of operational PDFs.",
+      "Improved decision-making accuracy by 40% through the implementation of vector search pipelines that minimized LLM hallucinations.",
       "Built modular backend APIs and integrated them with a real-time React/Next.js document search interface.",
-      "Received practical training in networking, cybersecurity, SAP ERP, data analytics, DBMS, and Power BI.",
+      "Modernized internal analytics capability by integrating Power BI dashboards with SAP ERP data, providing leadership with real-time operational insights.",
     ],
     duration: "May 2025 - Jul 2025",
     position: "SDE Intern",
@@ -371,14 +372,13 @@ export const workExperienceData = [
   {
     company: "Business Web Solution",
     description: [
-      "Joined as a frontend intern and delivered responsive React UI modules for an EdTech web platform with reusable component patterns.",
-      "Transitioned into backend-support tasks within 3 months based on team requirements.",
-      "Contributed to API integration, request/response contract handling, and bug fixes across frontend and backend touchpoints.",
-      "Worked with C# and .NET fundamentals for supervised feature-level updates, including endpoint and validation fixes.",
-      "Participated in sprint planning, QA handoff, and release cycles to ship production features on schedule.",
+      "Standardized frontend development for an EdTech platform by creating a library of reusable React components, reducing UI development time for future modules.",
+      "Minimized production downtime by taking ownership of backend bug fixes and API contract validation within the first 90 days of the internship.",
+      // "Worked with C# and .NET fundamentals for supervised feature-level updates, including endpoint and validation fixes.",
+      // "Participated in sprint planning, QA handoff, and release cycles to ship production features on schedule.",
     ],
     duration: "Jan 2023 - Jan 2024",
-    position: "Software Developer Intern",
+    position: "SDE Intern",
   },
 ];
 

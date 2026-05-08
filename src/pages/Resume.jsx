@@ -2,13 +2,12 @@ import {
   phoneNumber,
   educationData,
   projectsData,
-  servicesData,
   workExperienceData,
 } from "../config/constants";
 
 const Section = ({ children, title }) => {
   return (
-    <section className="print:break-inside-avoid print:mb-1">
+    <section className="print:break-inside-avoid print:mb-0.5">
       <Title bordered={true}>{title}</Title>
       {children}
     </section>
@@ -18,7 +17,7 @@ const Section = ({ children, title }) => {
 const Title = ({ children, bordered = false }) => {
   return (
     <h2
-      className={`pb-2 font-semibold print:pb-1 ${bordered && "mb-2 border-dark/20 border-b-2 print:mb-1"}`}
+      className={`pb-1 font-semibold print:pb-0.5 ${bordered && "mb-1 border-dark/20 border-b-2 print:mb-0.5"}`}
     >
       {children}
     </h2>
@@ -40,7 +39,7 @@ const Resume = () => {
         </button>
       </div>
       <div
-        className="space-y-4 px-4 text-sm print:space-y-2 print:px-0 print:text-[10px]"
+        className="space-y-2.5 px-4 text-sm print:space-y-1 print:px-0 print:text-[11px]"
         id="resume-content"
       >
         <header className="space-y-2 text-center">
@@ -92,19 +91,18 @@ const Resume = () => {
 
         <Section title="Professional Summary">
           <p>
-            TypeScript-first Software Engineer with over 2 years of experience
-            building production web applications and AI-assisted products across
-            internship and SDE roles. Hands-on with Retrieval-Augmented
-            Generation, vector search, FastAPI-backed LLM workflows, and
-            React/Next.js interfaces for document intelligence use cases. Strong
-            in feature delivery, backend integration, API security patterns,
-            debugging, and shipping scalable applications across TypeScript,
-            Node.js, Laravel, and .NET stacks.
+            TypeScript-first Software Engineer specializing in bridging the gap
+            between AI research and production-grade applications. Proven track
+            record of reducing system latency and increasing data accuracy
+            through RAG architectures and high-concurrency TypeScript/Node.js
+            systems. Focused on delivering measurable business impact by
+            modernizing legacy workflows and building scalable, type-safe
+            product ecosystems.
           </p>
         </Section>
 
         <Section title="Work Experience">
-          <div className="space-y-4 print:space-y-2">
+          <div className="space-y-3 print:space-y-1.5">
             {workExperienceData.map((exp) => (
               <div className="resume-block" key={exp.company}>
                 <div className="flex justify-between">
@@ -125,73 +123,179 @@ const Resume = () => {
         </Section>
 
         <Section title="Technical Skills">
-          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 print:grid-cols-2 print:gap-2">
-            {servicesData.map((service) => (
-              <div className="print:leading-tight" key={service.title}>
-                <h3 className="font-semibold print:mb-0.5">{service.title}</h3>
-                <ul className="list-inside list-disc print:mt-0 print:leading-tight">
-                  {service.items.map((item) => (
-                    <li className="print:mb-0" key={item.title}>
-                      {item.title}{" "}
-                      <span className="text-dark/60">{item.description}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="space-y-1 leading-snug print:space-y-0.5">
+            <p>
+              <span className="font-semibold">Languages:</span> TypeScript
+              (Primary), Java, C#,PHP
+            </p>
+            <p>
+              <span className="font-semibold">AI / LLM Systems:</span> RAG
+              Pipelines, Semantic Retrieval, Vector Search, AI Agents, Prompt
+              Engineering, Ollama, OpenAI APIs, Doc QA
+            </p>
+            <p>
+              <span className="font-semibold">Frontend:</span> Next.js, React,
+              Tailwind CSS, HTML/CSS
+            </p>
+            <p>
+              <span className="font-semibold">Backend</span> Node.js (Fastify,
+              Express), .NET Core, Laravel
+            </p>
+            <p>
+              <span className="font-semibold">Database & Orm</span> PostgreSQL,
+              MySQL, Sqlite, MongoDb, Prisma orm, Drizzle orm, EF core, Eloquent
+            </p>
+            <p>
+              <span className="font-semibold">Infrastructure:</span> Docker,
+              GitHub Actions, VPS (Contabo/Railway), Git, REST APIs
+            </p>
+            <p>
+              <span className="font-semibold">Analytics:</span> Power BI,
+              Tableau, Excel
+            </p>
           </div>
         </Section>
 
         <Section title="Projects">
-          <div className="space-y-4">
-            {projectsData.map((project) => (
-              <div className="resume-block" key={project.id}>
-                <div className="flex items-center justify-between gap-2">
-                  <a
-                    className="underline underline-offset-2"
-                    href={project.preview || project.href}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {project.name}
-                  </a>
-                  <div className="flex items-center gap-2">
-                    {project.frameworks.map((framework) => (
-                      <span key={framework.id}>{framework.name}</span>
-                    ))}
-                  </div>
-                </div>
-                <p>{project.description}</p>
-                {project.subProjects?.length ? (
-                  <div className="mt-2 flex flex-wrap gap-3 text-xs">
-                    {project.subProjects.map((subProject) => (
+          <div className="space-y-2 print:space-y-1">
+            {projectsData.map((project) =>
+              project.id === 1 ? (
+                <div className="resume-block leading-snug" key={project.id}>
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
+                    <div className="flex items-baseline gap-x-2">
                       <a
-                        className="rounded-full border border-dark/30 px-3 py-1"
-                        href={subProject.href}
-                        key={subProject.id}
+                        className="font-semibold underline underline-offset-2"
+                        href="https://github.com/nileshsehrawat"
                         rel="noopener noreferrer"
                         target="_blank"
                       >
-                        {subProject.name} ({subProject.status})
+                        {project.name}
                       </a>
-                    ))}
+                      <span className="text-dark/75 print:text-[9px]">|</span>
+                      <a
+                        className="text-xs underline underline-offset-2"
+                        href="https://github.com/nileshsehrawat/dmrc-chatbot-backend"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        Python
+                      </a>
+                      <span className="text-dark/75 print:text-[9px]">|</span>
+                      <a
+                        className="text-xs underline underline-offset-2"
+                        href="https://github.com/nileshsehrawat/rag-backend-ts"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        TypeScript
+                      </a>
+                    </div>
+                    <span className="text-dark/75 text-xs print:text-[9px]">
+                      React, Next.js, FastAPI, TypeScript, Ollama
+                    </span>
                   </div>
-                ) : null}
-              </div>
-            ))}
+                  <p className="mt-0.25 leading-snug text-dark/90">
+                    Engineered a RAG-powered assistant for technical document
+                    querying using local LLM workflows (Ollama) to ensure data
+                    privacy and zero-latency inference. Architected a dual-stack
+                    system, leveraging Python/FastAPI for heavy-duty AI
+                    processing and TypeScript for a type-safe, high-concurrency
+                    orchestration layer. Optimized retrieval accuracy by
+                    implementing custom document ingestion pipelines with
+                    semantic chunking and context-aware prompt engineering.
+                  </p>
+                </div>
+              ) : project.id === 3 ? (
+                <div className="resume-block leading-snug" key={project.id}>
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
+                    <div className="flex items-baseline gap-x-2">
+                      <span className="font-semibold">{project.name}</span>
+                      <span className="text-dark/75 print:text-[9px]">|</span>
+                      <a
+                        className="text-xs underline underline-offset-2"
+                        href="https://waitlist.thewillrise.com"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        Waitlist
+                      </a>
+                      <span className="text-dark/75 print:text-[9px]">|</span>
+                      <a
+                        className="text-xs underline underline-offset-2"
+                        href="https://github.com/nileshsehrawat"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        Core Platform
+                      </a>
+                    </div>
+                    <span className="text-dark/75 text-xs print:text-[9px]">
+                      Next.js, React Native, Hono, PostgreSQL, Drizzle, Kafka,
+                      Docker
+                    </span>
+                  </div>
+                  <p className="mt-0.25 leading-snug text-dark/90">
+                    Architected a full-stack monorepo using a shared core
+                    library to unify business logic and type definitions across
+                    Web (Next.js) and Mobile (React Native) platforms.
+                    Implemented an event-driven backend using Kafka for
+                    asynchronous user onboarding and Hono/Drizzle for
+                    high-performance, low-latency API routes. Containerized the
+                    entire infrastructure with Docker, ensuring reproducible
+                    development environments and streamlined deployment across
+                    staging and production.
+                  </p>
+                </div>
+              ) : (
+                <div className="resume-block leading-snug" key={project.id}>
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
+                    <a
+                      className="font-semibold underline underline-offset-2"
+                      href={project.preview || project.href}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      {project.name}
+                    </a>
+                    <span className="text-dark/75 text-xs print:text-[9px]">
+                      {project.frameworks
+                        .map((framework) => framework.name)
+                        .join(", ")}
+                    </span>
+                  </div>
+                  <p className="mt-0.25 leading-snug text-dark/90">
+                    {project.description}
+                  </p>
+                  {project.subProjects?.length ? (
+                    <p className="mt-0.25 text-xs text-dark/80 print:mt-0.25 print:text-[9px]">
+                      {project.subProjects
+                        .map(
+                          (subProject) =>
+                            `${subProject.name} (${subProject.status})`,
+                        )
+                        .join("; ")}
+                    </p>
+                  ) : null}
+                </div>
+              ),
+            )}
           </div>
         </Section>
 
         <Section title="Education">
           <p className="font-semibold">{educationData.university}</p>
-          <p>{educationData.degree}</p>
-          <p>{educationData.timeframe}</p>
+          <div className="flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
+            <p>{educationData.degree}</p>
+            <p className="text-dark/75 print:text-[9px]">
+              {educationData.timeframe} | CGPA: {educationData.cgpa}
+            </p>
+          </div>
         </Section>
       </div>
       <style global jsx>{`
         @media print {
           @page {
-            margin: 9mm;
+            margin: 8mm;
             size: A4;
           }
 
@@ -202,8 +306,8 @@ const Resume = () => {
           #resume-content * {
             visibility: visible;
             font-family: "Roboto", sans-serif;
-            font-size: 10.8px;
-            line-height: 1.26;
+            font-size: 12px;
+            line-height: 1.35;
             color: black;
             background: white;
             text-shadow: none;
@@ -213,15 +317,15 @@ const Resume = () => {
 
           #resume-content section {
             break-inside: avoid;
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.35rem;
           }
 
           #resume-content ul {
-            margin-top: 0.15rem;
+            margin-top: 0.1rem;
           }
 
           #resume-content li {
-            margin-bottom: 0.1rem;
+            margin-bottom: 0.05rem;
           }
 
           #resume-content h1,
@@ -232,7 +336,7 @@ const Resume = () => {
           }
 
           #resume-content .resume-block {
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.25rem;
           }
 
           #resume-content {
