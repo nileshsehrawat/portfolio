@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="z-10">
         <AnimatedHeader
           lineColor="bg-light"
-          subTitle="Full-Stack TypeScript Engineer | AI/LLM Systems | .NET"
+          subTitle="Full-Stack TypeScript Engineer | AI/LLM Systems "
           text={text}
           title="nilesh"
         />

@@ -6,7 +6,7 @@ export const servicesData = [
       "I build production-ready TypeScript applications with clean architecture, maintainable code, and measurable business impact.",
     items: [
       {
-        description: "(TypeScript, JavaScript, Java, C#)",
+        description: "(TypeScript, Python, Java)",
         title: "Primary Languages",
       },
       {
@@ -137,7 +137,7 @@ export const projectsData = [
         name: "TypeScript",
       },
     ],
-    href: "https://github.com/nileshsehrawat",
+    // href: "https://github.com/nileshsehrawat",
     id: 1,
     image: "images/1.webp",
     name: "Smart PDF Chatbot",
@@ -155,29 +155,6 @@ export const projectsData = [
         status: "Rebuilt",
       },
     ],
-  },
-  {
-    bgImage: "https://picsum.photos/600/400?random=2",
-    description:
-      "TypeScript toolchain that transforms text into generated waveform audio through deterministic processing pipelines.",
-    frameworks: [
-      {
-        id: 1,
-        name: "TypeScript",
-      },
-      {
-        id: 2,
-        name: "Bun",
-      },
-      {
-        id: 3,
-        name: "Web Audio API",
-      },
-    ],
-    href: "https://github.com/nileshsehrawat/wavify",
-    id: 2,
-    image: "images/2.webp",
-    name: "Wavify",
   },
   {
     bgImage: "https://picsum.photos/600/400?random=3",
@@ -224,7 +201,7 @@ export const projectsData = [
     href: "https://waitlist.thewillrise.com",
     id: 3,
     image: "images/3.webp",
-    name: "WillRise Ecosystem",
+    name: "WillRise | AI-Powered Productivity Platform",
     preview: "https://waitlist.thewillrise.com",
     subProjects: [
       {
@@ -241,6 +218,30 @@ export const projectsData = [
       },
     ],
   },
+  {
+    bgImage: "https://picsum.photos/600/400?random=2",
+    description:
+      "TypeScript toolchain that transforms text into generated waveform audio through deterministic processing pipelines.",
+    frameworks: [
+      {
+        id: 1,
+        name: "TypeScript",
+      },
+      {
+        id: 2,
+        name: "Bun",
+      },
+      {
+        id: 3,
+        name: "Web Audio API",
+      },
+    ],
+    href: "https://github.com/nileshsehrawat/wavify",
+    id: 2,
+    image: "images/2.webp",
+    name: "Wavify",
+  },
+
   {
     bgImage: "https://picsum.photos/600/400?random=5",
     description:
@@ -276,37 +277,37 @@ export const projectsData = [
     image: "images/5.webp",
     name: "Realtime Private Chat",
   },
-  {
-    bgImage: "https://picsum.photos/600/400?random=11",
-    description:
-      "Built a full-stack operations dashboard with React and ASP.NET Core 8 Web API to manage entities, track records, and run CSV bulk import/export workflows with secure auth and optimized EF Core queries.",
-    frameworks: [
-      {
-        id: 1,
-        name: "React",
-      },
-      {
-        id: 2,
-        name: "ASP.NET Core 8",
-      },
-      {
-        id: 3,
-        name: "EF Core",
-      },
-      {
-        id: 4,
-        name: "SQL Server",
-      },
-      {
-        id: 5,
-        name: "ASP.NET Identity",
-      },
-    ],
-    href: "https://github.com/nileshsehrawat",
-    id: 6,
-    image: "https://picsum.photos/900/520?random=111",
-    name: "OpsBoard - Full Stack Operations Dashboard",
-  },
+  // {
+  //   bgImage: "https://picsum.photos/600/400?random=11",
+  //   description:
+  //     "Built a full-stack operations dashboard with React and ASP.NET Core 8 Web API to manage entities, track records, and run CSV bulk import/export workflows with secure auth and optimized EF Core queries.",
+  //   frameworks: [
+  //     {
+  //       id: 1,
+  //       name: "React",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "ASP.NET Core 8",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "EF Core",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "SQL Server",
+  //     },
+  //     {
+  //       id: 5,
+  //       name: "ASP.NET Identity",
+  //     },
+  //   ],
+  //   href: "https://github.com/nileshsehrawat",
+  //   id: 6,
+  //   image: "https://picsum.photos/900/520?random=111",
+  //   name: "OpsBoard - Full Stack Operations Dashboard",
+  // },
 ];
 
 export const socialLinks = [
@@ -334,7 +335,7 @@ export const socialLinks = [
 
 export const educationData = {
   degree: "Bachelor's in Computer Science",
-  cgpa: "8.16 / 10",
+  // cgpa: "8.16 / 10",
   timeframe: "2022 - 2026",
   university: "PDM University",
 };
@@ -345,6 +346,7 @@ export const workExperienceData = [
   {
     company: "NotionZoa",
     description: [
+      "Contributed to a modular hotel-platform architecture initiative by developing reusable frontend component systems designed to accelerate AI-assisted generation and customization of high-feature web applications for hospitality businesses.",
       "Reduced booking friction by delivering high-performance features for a hotel service-management app, directly impacting user conversion across web and mobile platforms.",
       "Delivered product modules using React, Laravel, and REST APIs in sprint-based releases.",
       "Optimized backend throughput by designing PostgreSQL workflows and REST endpoints that handled business-critical modules for ticket management and technician scheduling.",

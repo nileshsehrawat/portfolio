@@ -25,7 +25,7 @@ const Title = ({ children, bordered = false }) => {
 };
 
 const Resume = () => {
-  const MAX_EXPERIENCE_BULLETS = 4;
+  const MAX_EXPERIENCE_BULLETS = 5;
 
   return (
     <div className="mx-auto flex max-w-4xl flex-col gap-4 py-4">
@@ -91,13 +91,14 @@ const Resume = () => {
 
         <Section title="Professional Summary">
           <p>
-            TypeScript-first Software Engineer specializing in bridging the gap
-            between AI research and production-grade applications. Proven track
-            record of reducing system latency and increasing data accuracy
-            through RAG architectures and high-concurrency TypeScript/Node.js
-            systems. Focused on delivering measurable business impact by
-            modernizing legacy workflows and building scalable, type-safe
-            product ecosystems.
+            TypeScript-first Software Engineer focused on building
+            production-grade AI applications, high-performance backend systems,
+            and scalable full-stack platforms. Experienced in developing RAG
+            pipelines, semantic retrieval systems, and AI-assisted workflows
+            using Node.js, Python, and modern LLM tooling. Strong foundation in
+            concurrency, in-memory processing, and type-safe architecture
+            design, with hands-on experience shipping real-world product
+            features across web, mobile, and AI-driven systems.
           </p>
         </Section>
 
@@ -126,51 +127,50 @@ const Resume = () => {
           <div className="space-y-1 leading-snug print:space-y-0.5">
             <p>
               <span className="font-semibold">Languages:</span> TypeScript
-              (Primary), Java, C#,PHP
+              (Primary), Python, Java
             </p>
             <p>
               <span className="font-semibold">AI / LLM Systems:</span> RAG
-              Pipelines, Semantic Retrieval, Vector Search, AI Agents, Prompt
-              Engineering, Ollama, OpenAI APIs, Doc QA
+              Pipelines, Semantic Retrieval, Vector Search, Context Engineering,
+              AI Agents, Prompt Engineering, Structured Outputs, Ollama, OpenAI
+              APIs, Long-Term Memory Systems
             </p>
             <p>
               <span className="font-semibold">Frontend:</span> Next.js, React,
               Tailwind CSS, HTML/CSS
             </p>
             <p>
-              <span className="font-semibold">Backend</span> Node.js (Fastify,
-              Express), .NET Core, Laravel
+              <span className="font-semibold">Backend:</span> Node.js (Fastify,
+              Express, Hono, Elysia), FastApi
             </p>
             <p>
-              <span className="font-semibold">Database & Orm</span> PostgreSQL,
-              MySQL, Sqlite, MongoDb, Prisma orm, Drizzle orm, EF core, Eloquent
+              <span className="font-semibold">Database:</span> PostgreSQL,
+              MySQL, Sqlite, MongoDb
             </p>
             <p>
-              <span className="font-semibold">Infrastructure:</span> Docker,
-              GitHub Actions, VPS (Contabo/Railway), Git, REST APIs
+              <span className="font-semibold">Infrastructure & Systems: </span>{" "}
+              Docker, GitHub Actions, VPS Deployment (Contabo/Railway), REST
+              APIs, Kafka, Worker Threads, Concurrency, Performance
+              Optimization, In-Memory Processing, Git
             </p>
-            <p>
+            {/* <p>
               <span className="font-semibold">Analytics:</span> Power BI,
               Tableau, Excel
-            </p>
+            </p> */}
           </div>
         </Section>
 
         <Section title="Projects">
-          <div className="space-y-2 print:space-y-1">
+          <div className="space-y-2.5 print:space-y-1.5">
             {projectsData.map((project) =>
               project.id === 1 ? (
-                <div className="resume-block leading-snug" key={project.id}>
+                <div
+                  className="resume-block space-y-1 leading-snug"
+                  key={project.id}
+                >
                   <div className="flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
                     <div className="flex items-baseline gap-x-2">
-                      <a
-                        className="font-semibold underline underline-offset-2"
-                        href="https://github.com/nileshsehrawat"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        {project.name}
-                      </a>
+                      <span className="font-semibold">{project.name}</span>
                       <span className="text-dark/75 print:text-[9px]">|</span>
                       <a
                         className="text-xs underline underline-offset-2"
@@ -194,7 +194,7 @@ const Resume = () => {
                       React, Next.js, FastAPI, TypeScript, Ollama
                     </span>
                   </div>
-                  <p className="mt-0.25 leading-snug text-dark/90">
+                  <p className="mt-1 leading-relaxed text-dark/90">
                     Engineered a RAG-powered assistant for technical document
                     querying using local LLM workflows (Ollama) to ensure data
                     privacy and zero-latency inference. Architected a dual-stack
@@ -206,7 +206,10 @@ const Resume = () => {
                   </p>
                 </div>
               ) : project.id === 3 ? (
-                <div className="resume-block leading-snug" key={project.id}>
+                <div
+                  className="resume-block space-y-1 leading-snug"
+                  key={project.id}
+                >
                   <div className="flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
                     <div className="flex items-baseline gap-x-2">
                       <span className="font-semibold">{project.name}</span>
@@ -234,20 +237,29 @@ const Resume = () => {
                       Docker
                     </span>
                   </div>
-                  <p className="mt-0.25 leading-snug text-dark/90">
-                    Architected a full-stack monorepo using a shared core
-                    library to unify business logic and type definitions across
-                    Web (Next.js) and Mobile (React Native) platforms.
-                    Implemented an event-driven backend using Kafka for
-                    asynchronous user onboarding and Hono/Drizzle for
-                    high-performance, low-latency API routes. Containerized the
-                    entire infrastructure with Docker, ensuring reproducible
-                    development environments and streamlined deployment across
-                    staging and production.
+                  <p className="mt-1 leading-relaxed text-dark/90">
+                    Architected a full-stack monorepo platform designed to
+                    combine behavioral tracking, goal management, and
+                    AI-assisted productivity workflows across Web and Mobile
+                    applications. Built shared business-logic layers and
+                    event-driven backend pipelines using Kafka and Hono to
+                    support scalable user activity ingestion and low-latency
+                    APIs.
+                  </p>
+                  <p className="mt-1 leading-relaxed text-dark/90">
+                    Designed the platform architecture to support personalized
+                    AI workflows using contextual memory, semantic retrieval,
+                    and adaptive task generation based on user habits, progress
+                    history, and long-term goals. Implemented containerized
+                    infrastructure and shared type-safe systems to streamline
+                    deployment consistency and rapid feature iteration.
                   </p>
                 </div>
               ) : (
-                <div className="resume-block leading-snug" key={project.id}>
+                <div
+                  className="resume-block space-y-1 leading-snug"
+                  key={project.id}
+                >
                   <div className="flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
                     <a
                       className="font-semibold underline underline-offset-2"
@@ -263,11 +275,11 @@ const Resume = () => {
                         .join(", ")}
                     </span>
                   </div>
-                  <p className="mt-0.25 leading-snug text-dark/90">
+                  <p className="mt-1 leading-relaxed text-dark/90">
                     {project.description}
                   </p>
                   {project.subProjects?.length ? (
-                    <p className="mt-0.25 text-xs text-dark/80 print:mt-0.25 print:text-[9px]">
+                    <p className="mt-1 text-xs text-dark/80 print:mt-0.25 print:text-[9px]">
                       {project.subProjects
                         .map(
                           (subProject) =>
@@ -287,7 +299,8 @@ const Resume = () => {
           <div className="flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
             <p>{educationData.degree}</p>
             <p className="text-dark/75 print:text-[9px]">
-              {educationData.timeframe} | CGPA: {educationData.cgpa}
+              {/* {educationData.timeframe} | CGPA: {educationData.cgpa} */}
+              {educationData.timeframe}
             </p>
           </div>
         </Section>
