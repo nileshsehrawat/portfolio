@@ -108,7 +108,7 @@ export const projectsData = [
     ],
     href: "https://github.com/nileshsehrawat/fluxprint",
     id: 7,
-    image: "images/7.webp",
+    image: "/images/7.png",
     name: "Flux Print",
   },
   {
@@ -139,7 +139,7 @@ export const projectsData = [
     ],
     // href: "https://github.com/nileshsehrawat",
     id: 1,
-    image: "images/1.webp",
+    image: "/images/1.png",
     name: "Smart PDF Chatbot",
     subProjects: [
       {
@@ -200,7 +200,7 @@ export const projectsData = [
     ],
     href: "https://waitlist.thewillrise.com",
     id: 3,
-    image: "images/3.webp",
+    image: "/images/3.png",
     name: "WillRise | AI-Powered Productivity Platform",
     preview: "https://waitlist.thewillrise.com",
     subProjects: [
@@ -238,7 +238,7 @@ export const projectsData = [
     ],
     href: "https://github.com/nileshsehrawat/wavify",
     id: 2,
-    image: "images/2.webp",
+    image: "/images/2.png",
     name: "Wavify",
   },
 
@@ -274,7 +274,7 @@ export const projectsData = [
     ],
     href: "https://github.com/nileshsehrawat/realtime_private_chat",
     id: 5,
-    image: "images/5.webp",
+    image: "/images/5.png",
     name: "Realtime Private Chat",
   },
   // {
